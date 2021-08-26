@@ -1,0 +1,75 @@
+App\Models\utilisateur:
+    type: entity
+    table: utilisateur
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: id
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+        prenom:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+        login:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+        adresse:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+        codePostal:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        ville:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+        telephone:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        mail:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+        civilite:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }
